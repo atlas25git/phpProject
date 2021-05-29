@@ -6,6 +6,7 @@
 <div class="wrapper">
 
 <?php 
+  include('adminpartials/session.php');
   include("adminpartials/header.php");
   include("adminpartials/aside.php");
 

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include("adminpartials/head.php")?>
+<?php 
+include('adminpartials/session.php');
+include("adminpartials/head.php")?>
 
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -35,7 +37,8 @@
         <div class="col-sm-3"></div>
        
         <div class="col-sm-6">
-      <form role="form">
+      
+      <form role="form" action="producthandler.php" method="POST" enctype="multipart/form-data">
         <h1>Products</h1>
            
                 <div class="form-group">
@@ -45,23 +48,33 @@
 
                 <div class="form-group">
                     <label for="name">Price</label>
-                    <input type="text" class="form-control" id="price" placeholder="Price">
+                    <input type="text" class="form-control" id="price" placeholder="Price" name="price">
                 </div>
 
                 <div class="form-group">
                     <label for="picture">Product Image</label>
-                    <input type="file" class="form-control" id="picture">
+                    <input type="file" class="form-control" id="file" name="file">
                 </div>
 
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea id="description" class="form-control" rows="10" placeholder="Enter Description"></textarea>
+                    <textarea id="description" class="form-control" rows="10" name="description" placeholder="Enter Description"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="category">Category</label>
-                    <select id="category">
-                        <option>Shirt</option>
-                        <option>Pants</option>
+                    <select id="category" name="category">
+                       <?php
+                       include('../partials/connect.php');
+                       $cat="SELECT* from categories";
+                        $results=mysqli_query($connect,$cat);
+                        while($row=mysqli_fetch_assoc($results)){
+                          echo "<option value=".$row['id'].">".$row['name']."</option>";
+                        }
+
+                       ?>
+
+                        <!-- <option>Shirt</option>
+                        <option>Pants</option> -->
                     </select>
                 </div>
          </div>
@@ -71,6 +84,7 @@
                 <button type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
+
             </div>
             <div class="col-sm-3"></div>
 
