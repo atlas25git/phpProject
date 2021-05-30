@@ -64,11 +64,11 @@ include('adminpartials/head.php');
                 </div>
                 <div class="form-group">
                   <label for="picture">File input</label>
-                  <input type="file" id="picture" name="file" value="<?php echo $final['picture'] ?>">
+                  <input type="file" id="picture" name="file" placeholder="Picture" value="<?php echo $final['picture'] ?>" name="picture">
                 </div>
                 <div class="form-group">
                   <label for="description">Description</label>
-                  <textarea id="description" class="form-control" rows="10" placeholder="Enter Description" value="<?php echo $final['description'] ?>" name="description"></textarea>
+                  <textarea id="description" class="form-control" rows="10" placeholder="Enter Description" value="" name="description"><?php echo $final['description'] ?></textarea>
                 </div>
                 <div class="form-group">
                   <label for="category">Category</label>
