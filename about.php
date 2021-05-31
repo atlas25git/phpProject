@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("partials/head.php");?>
-
-
+<?php
+include ("partials/head.php");
+?>
 <body class="animsition">
-	
-	
-<?php 
-	include("partials/header.php");
-	include("partials/cart.php");
+	<?php
+	include ("partials/header.php");
+
+
+
 ?>
 
-
 	<!-- Title page -->
-	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/about1.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
 			About
 		</h2>
 	</section>	
 
 
-	<!-- Content page --> 
+	<!-- Content page -->
 	<section class="bg0 p-t-75 p-b-120">
 		<div class="container">
 			<div class="row p-b-148">
@@ -31,15 +30,15 @@
 						</h3>
 
 						<p class="stext-113 cl6 p-b-26">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consequat consequat enim, non auctor massa ultrices non. Morbi sed odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas varius egestas diam, eu sodales metus scelerisque congue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas gravida justo eu arcu egestas convallis. Nullam eu erat bibendum, tempus ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt vitae nec augue. Suspendisse potenti. Proin ut est diam. Donec condimentum euismod tortor, eget facilisis diam faucibus et. Morbi a tempor elit.
+							We started this company to share our ideas of new cloths and provide you with the best garments possible. We started in 1800 and since then we have grown so much because you are our customer and you give us money to keep our company running.
 						</p>
 
 						<p class="stext-113 cl6 p-b-26">
-							Donec gravida lorem elit, quis condimentum ex semper sit amet. Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut fringilla turpis in vehicula vehicula. Pellentesque congue ac orci ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit convallis ipsum, et maximus enim ligula ac ligula. 
+							Our customers are our top priority and we do not want to lose any of you. So please drive safe and never text while on the wheel. It is dangerous.
 						</p>
 
 						<p class="stext-113 cl6 p-b-26">
-							Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+							Any questions? Let us know in store at Hokage office, hidden street, Hidden leaf village, HL 10018 or call us on (+1) 96 Kakashi Hatake
 						</p>
 					</div>
 				</div>
@@ -47,7 +46,7 @@
 				<div class="col-11 col-md-5 col-lg-4 m-lr-auto">
 					<div class="how-bor1 ">
 						<div class="hov-img0">
-							<img src="images/about-01.jpg" alt="IMG">
+							<img src="images/about3.jpg" alt="IMG">
 						</div>
 					</div>
 				</div>
@@ -61,16 +60,16 @@
 						</h3>
 
 						<p class="stext-113 cl6 p-b-26">
-							Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum rhoncus dignissim risus, sed consectetur erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam maximus mauris sit amet odio convallis, in pharetra magna gravida. Praesent sed nunc fermentum mi molestie tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas, luctus arcu non, laoreet mauris. Sed in ipsum tempor, consequat odio in, porttitor ante. Ut mauris ligula, volutpat in sodales in, porta non odio. Pellentesque tempor urna vitae mi vestibulum, nec venenatis nulla lobortis. Proin at gravida ante. Mauris auctor purus at lacus maximus euismod. Pellentesque vulputate massa ut nisl hendrerit, eget elementum libero iaculis.
+							Our mission is simple. Provide you with the finest cloths and keep doing it till you are addicted to our brand. That way, you will never go bcak to any other brand.
 						</p>
 
 						<div class="bor16 p-l-29 p-b-9 m-t-22">
 							<p class="stext-114 cl6 p-r-40 p-b-11">
-								Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while.
+								After this, we will be able to control all the clothing industry like windows control the IT industry.
 							</p>
 
 							<span class="stext-111 cl8">
-								- Steve Job’s 
+								- Danzo 
 							</span>
 						</div>
 					</div>
@@ -79,7 +78,7 @@
 				<div class="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
 					<div class="how-bor2">
 						<div class="hov-img0">
-							<img src="images/about-02.jpg" alt="IMG">
+							<img src="images/about2.jpg" alt="IMG">
 						</div>
 					</div>
 				</div>
@@ -89,7 +88,10 @@
 	
 		
 
-<?php include("partials/footer.php");?>
+	<!-- Footer -->
+	<?php
+	include('partials/footer.php');
+	?>
 	
 </body>
 </html>

@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include("partials/head.php");?>
-
-
+<?php
+include ("partials/head.php");
+?>
 <body class="animsition">
-	
-	
-<?php 
-	include("partials/header.php");
-	include("partials/cart.php");
+	<?php
+	include ("partials/header.php");
+
+
 ?>
 
-
 	<!-- Title page -->
-	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/about1.jpg');">
 		<h2 class="ltext-105 cl0 txt-center">
 			Contact
 		</h2>
@@ -57,7 +55,7 @@
 							</span>
 
 							<p class="stext-115 cl6 size-213 p-t-18">
-								Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018 US
+								Hokage office, Hidden street, Hidden Leaf Village, HL 10018 SL
 							</p>
 						</div>
 					</div>
@@ -73,7 +71,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								+1 800 1236879
+								+1 800 Ino
 							</p>
 						</div>
 					</div>
@@ -89,7 +87,7 @@
 							</span>
 
 							<p class="stext-115 cl1 size-213 p-t-18">
-								contact@example.com
+								tenten@hl.com
 							</p>
 						</div>
 					</div>
@@ -106,7 +104,10 @@
 
 
 
-<?php include("partials/footer.php");?>
+	<!-- Footer -->
+	<?php
+	include('partials/footer.php');
+	?>
 
 </body>
 </html>
