@@ -18,7 +18,7 @@ include ("partials/head.php");
 		
 
 	<!-- Product Detail -->
-	<section class="sec-product-detail bg0 p-t-65 p-b-60">
+	<section class="sec-product-detail bg0 p-t-65 p-b-60"> 
 		<div class="container">
 			<div class="row">
 				<?php
