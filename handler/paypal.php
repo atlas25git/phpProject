@@ -3,10 +3,13 @@
 <?php
 session_start();
 ?>
+<html lang="en">
+
 <head>
     <!-- Add meta tags for mobile and IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> PayPal Smart Payment Buttons Integration | Client Demo </title>
 </head>
 
 <body>
@@ -14,7 +17,7 @@ session_start();
     <div id="paypal-button-container"></div>
 
     <!-- Include the PayPal JavaScript SDK -->
-    <script src="https://www.paypal.com/sdk/js?client-id=AUt3455u4OH0ePqwox9asbkNXx6Te-UCJdJhLMBnZ7RxBDwM_Za0H3OqxsGAy8FxluGDr2SlpL5akFLi&currency=USD"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AQIFORLvCr3so2ov_kr42_m6gcr-pvTUDoyL2QM3cSg9zX3K9IW5zqjh4wELAs1hjUjShceK2is2FfZI&currency=USD"></script>
 
     <script>
         // Render the PayPal button into #paypal-button-container
@@ -25,7 +28,7 @@ session_start();
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: <? echo $_SESSION['total'] ?>
+                            value: '<? echo $_SESSION['total'] ?>'
                         }
                     }]
                 });
@@ -43,4 +46,6 @@ session_start();
         }).render('#paypal-button-container');
     </script>
 </body>
+
+</html>
     
