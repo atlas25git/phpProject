@@ -9,7 +9,7 @@ include("partials/connect.php");
 			<div class="top-bar">
 				<div class="content-topbar flex-sb-m h-full container">
 					<div class="left-top-bar">
-						We Class You Up.....
+						Welcome to the intellectual side
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
@@ -38,7 +38,7 @@ include("partials/connect.php");
 					
 					<!-- Logo desktop -->		
 					<a href="#" class="logo">
-						<img src="images/icons/logo-01.png" alt="IMG-LOGO">
+						<strong style="font-size: larger; font-weight:800;">Booker</strong>
 					</a>
 
 					<!-- Menu desktop -->
@@ -92,9 +92,9 @@ include("partials/connect.php");
 		<!-- Header Mobile -->
 		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->		
-			<div class="logo-mobile">
-				<a href="index.php"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
-			</div>
+			<a href="#" class="logo">
+						<strong style="font-size: larger; font-weight:800;">Booker</strong>
+					</a>
 
 			<!-- Icon header -->
 			<div class="wrap-icon-header flex-w flex-r-m m-r-15">
