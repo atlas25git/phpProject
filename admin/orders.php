@@ -35,23 +35,29 @@ include('adminpartials/head.php');
       <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-sm-9">
-
+          
+        
           <?php
           include('../partials/connect.php');
 
-          $id=$_GET['pro_id'];
-          $sql="SELECT * from products WHERE id='$id'";
+          $sql="Select * from orders";;
           $results=$connect->query($sql);
+          while($final=$results->fetch_assoc()){ ?>
 
-          $final=$results->fetch_assoc();        
+            <a href="ordershow.php?pro_id=<?php echo $final['id']?>">
+            <h3><?php echo $final['id'] ?>: <?php echo $final['phone']?></h3><br>
+            <h3>Total: <?php echo $final['phone']?></h3><br>
+
+          </a>
+
+
+          <a href="orderdelete.php?del_id=<?php echo $final['id'] ?>">
+            <button style="color:red">Delete</button>
+          </a><hr>
+
+
+         <?php }
           ?>
-
-          <h3> Name : <?php echo $final['name']?> </h3><hr><br>
-
-          <h3> Price : <?php echo $final['price']?> </h3><hr><br>
-
-          <h3> Description : <?php echo $final['description']?> </h3><hr><br>
-          <img src="..\<?php echo $final['picture'] ?>" alt="No File" style="height:300px; width:300px">
 
 
 
@@ -61,7 +67,7 @@ include('adminpartials/head.php');
 
       
 <div class="col-sm-3">
-  
+
   </div>
 </div>
     </section>
