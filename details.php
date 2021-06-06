@@ -24,9 +24,15 @@ include ("partials/head.php");
 				<?php
 				include("partials/connect.php");
 				$id=$_GET['details_id'];
+				$catID=$_GET['category_id'];
 				$sql="Select * from products where id='$id'";
+				$sql2="SELECT name from categories where id='$catID'";
+				
 				$results=$connect->query($sql);
 				$final=$results->fetch_assoc();
+
+				$catName=$connect->query($sql2);
+				$catFinal=$catName->fetch_assoc();
 
 				?>
 				<div class="col-md-6 col-lg-7 p-b-30">
@@ -140,11 +146,11 @@ include ("partials/head.php");
 
 		<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
 			<span class="stext-107 cl6 p-lr-25">
-				SKU: JAK-01
+				<?php echo $final['price'] ?>$
 			</span>
 
 			<span class="stext-107 cl6 p-lr-25">
-				Categories: Jacket, Men
+				<?php echo $catFinal['name'] ?>
 			</span>
 		</div>
 	</section>
