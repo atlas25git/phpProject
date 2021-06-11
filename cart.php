@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-session_start();
+//session_start();
+//include("handler/customersession.php");
 include ("partials/head.php");
 ?>
 <body class="animsition">
@@ -12,6 +13,8 @@ include ("partials/head.php");
 ?>
 
 	<!-- breadcrumb -->
+	<br>
+	<br>
 	<div class="container">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
 			<a href="index.html" class="stext-109 cl8 hov-cl1 trans-04">

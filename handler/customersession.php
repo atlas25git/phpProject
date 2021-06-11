@@ -4,8 +4,4 @@ if (empty($_SESSION['email'] AND $_SESSION['password'])) {
 		window.location.href='customerforms.php';
 		</script>";
 }
-
-
-
-
 ?>

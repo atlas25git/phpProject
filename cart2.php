@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-session_start();
-include("handler/customersession.php");
+//session_start();
+//include("handler/customersession.php");
 include ("partials/head.php");
 ?>
 <body class="animsition">
@@ -10,8 +10,9 @@ include ("partials/head.php");
 	include ("partials/header.php");
 
 
-?>
-
+?>	
+	<br>
+	<br>
 	<!-- breadcrumb -->
 	<div class="container">
 		<div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">

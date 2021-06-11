@@ -1,5 +1,12 @@
 <?php 
 include("partials/connect.php");
+session_start();
+if(session_id() != '' || isset($_SESSION))
+{	
+	
+	//include("handler/customersession.php");
+}
+
 ?>
 	<!-- Header -->
 	<header>
