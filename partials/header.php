@@ -44,7 +44,7 @@ if(session_id() != '' || isset($_SESSION))
 				<nav class="limiter-menu-desktop container">
 					
 					<!-- Logo desktop -->		
-					<a href="#" class="logo">
+					<a href="index.php" class="logo">
 						<strong style="font-size: larger; font-weight:800;">Booker</strong>
 					</a>
 

@@ -60,6 +60,7 @@ include("adminpartials/head.php")?>
                     <label for="description">Description</label>
                     <textarea id="description" class="form-control" rows="10" name="description" placeholder="Enter Description"></textarea>
                 </div>
+                
                 <div class="form-group">
                     <label for="category">Category</label>
                     <select id="category" name="category">

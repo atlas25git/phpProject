@@ -28,7 +28,7 @@ session_start();
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: '<? echo $_SESSION['total'] ?>'
+                            value: '88.44'
                         }
                     }]
                 });
